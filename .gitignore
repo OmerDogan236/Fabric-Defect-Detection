@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Veri seti ve eğitilmiş model ağırlıkları (boyutları GitHub sınırını aşar)
+data/
+*.pt
+*.pth
+*.ckpt
+models/all_types_wr50_256_l23_runs/
+models/subtype_classifier/
+models/defect_type_classifier/
+models/final_hybrid_fabric_artifacts/banks/
+models/final_hybrid_fabric_artifacts/checkpoints/
+models/final_hybrid_fabric_artifacts/metadata/
+
+# Uygulamanın çalışırken ürettiği dosyalar
+runtime_outputs/
+runtime_uploads/
+
+# Gizli bilgiler
+.env

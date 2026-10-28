@@ -1,0 +1,313 @@
+{
+  "project": "fabric_defect_hybrid_anomaly_localization",
+  "version": "week47_final_hybrid_v1",
+  "mask_size": 256,
+  "default_device": "cuda_if_available",
+  "final_branch_table": {
+    "type1cam1": {
+      "branch": "dino_feature_distance",
+      "method": "dino_feature_distance_memory_bank",
+      "type_name": "type1cam1",
+      "model_name": "vit_small_patch14_dinov2",
+      "dino_size": 448,
+      "mask_size": 256,
+      "bank_file": "banks/type1cam1_dino_bank.pt",
+      "norm_mode": "minmax",
+      "threshold": 0.7,
+      "min_area": 30,
+      "max_comp_area": 0,
+      "keep_top_k": 0,
+      "max_total_area": 0,
+      "selected_reason": "DINOv2 448 branch mevcut değerlendirmede yeterli görüldü. Exact threshold gerekiyorsa final validation sırasında güncellenecek.",
+      "metrics": {
+        "dice": null,
+        "precision": null,
+        "recall": null,
+        "good_fp_any_rate": null
+      },
+      "bank_shape": [
+        225280,
+        384
+      ],
+      "bank_dtype": "torch.float16",
+      "bank_selected_images": 220,
+      "bank_grid_h": 32,
+      "bank_grid_w": 32
+    },
+    "type2cam2": {
+      "branch": "dino_feature_distance",
+      "method": "dino_feature_distance_memory_bank",
+      "type_name": "type2cam2",
+      "model_name": "vit_small_patch14_dinov2",
+      "dino_size": 448,
+      "mask_size": 256,
+      "bank_file": "banks/type2cam2_dino_bank.pt",
+      "norm_mode": "minmax",
+      "threshold": 0.7,
+      "min_area": 30,
+      "max_comp_area": 0,
+      "keep_top_k": 0,
+      "max_total_area": 0,
+      "selected_reason": "DINOv2 448 branch mevcut değerlendirmede yeterli görüldü. Exact threshold gerekiyorsa final validation sırasında güncellenecek.",
+      "metrics": {
+        "dice": null,
+        "precision": null,
+        "recall": null,
+        "good_fp_any_rate": null
+      },
+      "bank_shape": [
+        185344,
+        384
+      ],
+      "bank_dtype": "torch.float16",
+      "bank_selected_images": 181,
+      "bank_grid_h": 32,
+      "bank_grid_w": 32
+    },
+    "type3cam1": {
+      "branch": "dino_feature_distance",
+      "method": "dino_feature_distance_memory_bank",
+      "type_name": "type3cam1",
+      "model_name": "vit_small_patch14_dinov2",
+      "dino_size": 448,
+      "mask_size": 256,
+      "bank_file": "banks/type3cam1_dino_bank.pt",
+      "norm_mode": "minmax",
+      "threshold": 0.7,
+      "min_area": 30,
+      "max_comp_area": 0,
+      "keep_top_k": 0,
+      "max_total_area": 0,
+      "selected_reason": "DINOv2 448 branch mevcut değerlendirmede yeterli görüldü. Exact threshold gerekiyorsa final validation sırasında güncellenecek.",
+      "metrics": {
+        "dice": null,
+        "precision": null,
+        "recall": null,
+        "good_fp_any_rate": null
+      },
+      "bank_shape": [
+        307200,
+        384
+      ],
+      "bank_dtype": "torch.float16",
+      "bank_selected_images": 300,
+      "bank_grid_h": 32,
+      "bank_grid_w": 32
+    },
+    "type4cam2": {
+      "branch": "dino_feature_distance",
+      "method": "dino_feature_distance_memory_bank",
+      "type_name": "type4cam2",
+      "model_name": "vit_small_patch14_dinov2",
+      "dino_size": 448,
+      "mask_size": 256,
+      "bank_file": "banks/type4cam2_dino_bank.pt",
+      "norm_mode": "minmax",
+      "threshold": 0.7,
+      "min_area": 30,
+      "max_comp_area": 0,
+      "keep_top_k": 0,
+      "max_total_area": 0,
+      "selected_reason": "DINOv2 448 branch mevcut değerlendirmede yeterli görüldü. Exact threshold gerekiyorsa final validation sırasında güncellenecek.",
+      "metrics": {
+        "dice": null,
+        "precision": null,
+        "recall": null,
+        "good_fp_any_rate": null
+      },
+      "bank_shape": [
+        185344,
+        384
+      ],
+      "bank_dtype": "torch.float16",
+      "bank_selected_images": 181,
+      "bank_grid_h": 32,
+      "bank_grid_w": 32
+    },
+    "type5cam2": {
+      "branch": "dino_feature_distance",
+      "method": "dino_feature_distance_memory_bank",
+      "type_name": "type5cam2",
+      "model_name": "vit_small_patch14_dinov2",
+      "dino_size": 448,
+      "mask_size": 256,
+      "bank_file": "banks/type5cam2_dino_bank.pt",
+      "norm_mode": "minmax",
+      "threshold": 0.7,
+      "min_area": 30,
+      "max_comp_area": 0,
+      "keep_top_k": 0,
+      "max_total_area": 0,
+      "selected_reason": "DINOv2 448 branch mevcut değerlendirmede yeterli görüldü. Exact threshold gerekiyorsa final validation sırasında güncellenecek.",
+      "metrics": {
+        "dice": null,
+        "precision": null,
+        "recall": null,
+        "good_fp_any_rate": null
+      },
+      "bank_shape": [
+        185344,
+        384
+      ],
+      "bank_dtype": "torch.float16",
+      "bank_selected_images": 181,
+      "bank_grid_h": 32,
+      "bank_grid_w": 32
+    },
+    "type7cam2": {
+      "branch": "dino_feature_distance",
+      "method": "dino_feature_distance_memory_bank",
+      "type_name": "type7cam2",
+      "model_name": "vit_small_patch14_dinov2",
+      "dino_size": 448,
+      "mask_size": 256,
+      "bank_file": "banks/type7cam2_dino_bank.pt",
+      "norm_mode": "minmax",
+      "threshold": 0.7,
+      "min_area": 30,
+      "max_comp_area": 0,
+      "keep_top_k": 0,
+      "max_total_area": 0,
+      "selected_reason": "DINOv2 448 branch mevcut değerlendirmede yeterli görüldü. Exact threshold gerekiyorsa final validation sırasında güncellenecek.",
+      "metrics": {
+        "dice": null,
+        "precision": null,
+        "recall": null,
+        "good_fp_any_rate": null
+      },
+      "bank_shape": [
+        307200,
+        384
+      ],
+      "bank_dtype": "torch.float16",
+      "bank_selected_images": 300,
+      "bank_grid_h": 32,
+      "bank_grid_w": 32
+    },
+    "type10cam2": {
+      "branch": "dino_feature_distance",
+      "method": "dino_feature_distance_memory_bank",
+      "type_name": "type10cam2",
+      "model_name": "vit_small_patch14_dinov2",
+      "dino_size": 448,
+      "mask_size": 256,
+      "bank_file": "banks/type10cam2_dino_bank.pt",
+      "norm_mode": "minmax",
+      "threshold": 0.7,
+      "min_area": 30,
+      "max_comp_area": 0,
+      "keep_top_k": 0,
+      "max_total_area": 0,
+      "selected_reason": "DINOv2 448 branch mevcut değerlendirmede yeterli görüldü. Exact threshold gerekiyorsa final validation sırasında güncellenecek.",
+      "metrics": {
+        "dice": null,
+        "precision": null,
+        "recall": null,
+        "good_fp_any_rate": null
+      },
+      "bank_shape": [
+        307200,
+        384
+      ],
+      "bank_dtype": "torch.float16",
+      "bank_selected_images": 300,
+      "bank_grid_h": 32,
+      "bank_grid_w": 32
+    },
+    "type6cam2": {
+      "branch": "classical_small_defect",
+      "method": "classical_small_defect",
+      "type_name": "type6cam2",
+      "map_name": "tophat_k9",
+      "norm_mode": "q95_q999",
+      "threshold": 0.85,
+      "min_area": 10,
+      "max_comp_area": 0,
+      "keep_top_k": 0,
+      "max_total_area": 0,
+      "selected_reason": "Type6 küçük nokta/delik hata yapısı için classical small-defect branch en iyi sonucu verdi.",
+      "metrics": {
+        "dice": 0.6837374552747131,
+        "precision": 0.9386613297097167,
+        "recall": 0.5718984833519047,
+        "good_fp_any_rate": 0.1
+      }
+    },
+    "type8cam1": {
+      "branch": "dino_classical_fusion",
+      "method": "dino_classical_fusion",
+      "type_name": "type8cam1",
+      "model_name": "vit_small_patch14_dinov2",
+      "dino_size": 448,
+      "bank_file": "banks/type8cam1_dino_bank.pt",
+      "dino_norm": "minmax",
+      "class_norm": "q95_q999",
+      "fusion_mode": "dino_gated_by_class",
+      "dino_threshold": 0.55,
+      "class_threshold": 0.7,
+      "dilate_k": 3,
+      "alpha": -1.0,
+      "weighted_threshold": -1.0,
+      "min_area": 20,
+      "max_comp_area": 0,
+      "keep_top_k": 0,
+      "max_total_area": 0,
+      "selected_reason": "Type8 için DINO geniş aday bölge, classical line sinyali temiz doğrulayıcı olarak kullanıldı.",
+      "metrics": {
+        "dice": 0.483538231293386,
+        "precision": 0.8266065225539153,
+        "recall": 0.3891847520459917,
+        "good_fp_any_rate": 0.1
+      },
+      "bank_shape": [
+        409600,
+        384
+      ],
+      "bank_dtype": "torch.float16",
+      "bank_selected_images": 400,
+      "bank_grid_h": 32,
+      "bank_grid_w": 32
+    },
+    "type9cam2": {
+      "branch": "dino_rd_lite",
+      "method": "dino_feature_autoencoder_rd_lite",
+      "type_name": "type9cam2",
+      "model_name": "vit_small_patch14_dinov2",
+      "dino_size": 448,
+      "mask_size": 256,
+      "checkpoint_file": "checkpoints/type9cam2_token_autoencoder.pt",
+      "mode": "minmax",
+      "threshold": 0.9,
+      "min_area": 80,
+      "max_comp_area": 0,
+      "keep_top_k": 0,
+      "max_total_area": 0,
+      "morph_open": 3,
+      "morph_close": 0,
+      "bottleneck_dim": 48,
+      "selected_reason": "Type9 için normal DINOv2 448 RD-lite, Good FP=0 ile en güvenli final aday seçildi.",
+      "metrics": {
+        "dice": 0.4705553853233732,
+        "precision": 0.5425646888786121,
+        "recall": 0.584726523932766,
+        "good_fp_any_rate": 0.0
+      }
+    }
+  },
+  "dino_bank_required_types": [
+    "type1cam1",
+    "type2cam2",
+    "type3cam1",
+    "type4cam2",
+    "type5cam2",
+    "type7cam2",
+    "type10cam2",
+    "type8cam1"
+  ],
+  "notes": [
+    "Type9 için finalde normal DINOv2 448 RD-lite seçildi; registers RD-lite relaxed daha yüksek Dice verdi ama good FP açtı.",
+    "Type6 classical small-defect branch kullanır, DINO bank gerekmez.",
+    "Type8 DINO + classical fusion kullanır, DINO bank gerekir.",
+    "Type1/2/3/4/5/7/10 DINO feature-distance memory bank kullanır."
+  ]
+}
